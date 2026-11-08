@@ -1,0 +1,7 @@
+repository = "https://github.com/merlin-editor/merlin"
+path = "plugins/python"
+owners = ["marc-cr1810"]
+
+[[versions]]
+version = "0.1.0"
+commit = "1c58427d3162e0dfba56dd7330d32021f202c337"
