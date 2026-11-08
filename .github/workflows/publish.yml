@@ -1,0 +1,48 @@
+name: Publish
+
+# On main: builds what's new, releases it, and signs a new index.json onto
+# gh-pages, where GitHub Pages serves it.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# One at a time with resign.yml, so serials never collide.
+concurrency:
+  group: registry
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    environment: registry
+    container:
+      image: rust:1.97.1-slim-trixie@sha256:8e8cf8f7fd54a2d23d5a743b3a03f56e26b6c774276c33fa0595111704ebb15c
+    steps:
+      - name: Install build tools
+        run: |
+          apt-get update -q
+          apt-get install -y -q --no-install-recommends git ca-certificates
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+      - name: Install the rest
+        run: xargs -a build/apt.txt apt-get install -y -q --no-install-recommends
+      - uses: actions/cache@v4
+        with:
+          path: /opt/merlin
+          key: merlin-${{ hashFiles('build/toolchain.env') }}
+      - run: build/setup.sh
+      - name: Check the entries
+        run: python3 tools/registry.py validate
+      - name: Build, release, sign
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MINISIGN_SECRET_KEY: ${{ secrets.MINISIGN_SECRET_KEY }}
+        run: build/publish.sh

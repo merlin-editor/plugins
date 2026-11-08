@@ -1,0 +1,40 @@
+name: Check
+
+# A pull request's entries are checked, and each new version is built twice
+# from scratch: both builds must give the same bytes.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    container:
+      image: rust:1.97.1-slim-trixie@sha256:8e8cf8f7fd54a2d23d5a743b3a03f56e26b6c774276c33fa0595111704ebb15c
+    steps:
+      - name: Install build tools
+        run: |
+          apt-get update -q
+          apt-get install -y -q --no-install-recommends git ca-certificates
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install the rest
+        run: xargs -a build/apt.txt apt-get install -y -q --no-install-recommends
+      - uses: actions/cache@v4
+        with:
+          path: /opt/merlin
+          key: merlin-${{ hashFiles('build/toolchain.env') }}
+      - run: build/setup.sh
+      - name: Check the entries
+        id: entries
+        run: |
+          git config --global --add safe.directory '*'
+          echo "versions=$(python3 tools/registry.py validate --base origin/main)" >> "$GITHUB_OUTPUT"
+      - name: Build new versions twice
+        env:
+          VERSIONS: ${{ steps.entries.outputs.versions }}
+        run: build/check.sh

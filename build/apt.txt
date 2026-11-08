@@ -1,0 +1,13 @@
+git
+ca-certificates
+python3
+clang
+minisign
+gh
+pkg-config
+libxkbcommon-dev
+libfontconfig1-dev
+libasound2-dev
+libxcb-render0-dev
+libxcb-shape0-dev
+libxcb-xfixes0-dev
