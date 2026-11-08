@@ -1,0 +1,19 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "DB",
+    "hue": "orange",
+    "title": "Debugger"
+  },
+  "name": "dap",
+  "permissions": {
+    "debugger": true
+  },
+  "published": "2026-11-08T23:20:18Z",
+  "sha256": "6a74817187a2e6898d0c2147e941627447f0fe8ca55607dc5c7aa5bdefba0064",
+  "size": 81603,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/dap-v0.1.0/dap-0.1.0.merlin",
+  "version": "0.1.0"
+}

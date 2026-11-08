@@ -1,0 +1,24 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "PY",
+    "description": "Python syntax, pytest & pyright",
+    "hue": "cyan",
+    "title": "Python"
+  },
+  "name": "python",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "pyright-langserver"
+    ]
+  },
+  "published": "2026-11-08T23:23:58Z",
+  "sha256": "bb2efee2f4fafc1385465987356ffdc97aab0d9ce8bc12636365ee3db72902a4",
+  "size": 607026,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/python-v0.1.0/python-0.1.0.merlin",
+  "version": "0.1.0"
+}

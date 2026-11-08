@@ -1,0 +1,24 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "C+",
+    "description": "C & C++ syntax, outlines & clangd",
+    "hue": "blue",
+    "title": "C/C++"
+  },
+  "name": "cpp",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "clangd"
+    ]
+  },
+  "published": "2026-11-08T23:19:57Z",
+  "sha256": "8daf71ee09e0210307b0074356635a2abfe7449b9692da49163d5b894dbb0db0",
+  "size": 177006,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/cpp-v0.1.0/cpp-0.1.0.merlin",
+  "version": "0.1.0"
+}

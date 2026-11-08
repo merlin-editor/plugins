@@ -1,0 +1,20 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "{}",
+    "description": "Syntax highlighting & code folding",
+    "hue": "green",
+    "title": "JSON"
+  },
+  "name": "json",
+  "permissions": {
+    "editor-read": true
+  },
+  "published": "2026-11-08T23:21:42Z",
+  "sha256": "df882524de73a739c17ecef5d6ddf320087c15b5ff8b9383d03817fb64c55795",
+  "size": 410209,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/json-v0.1.0/json-0.1.0.merlin",
+  "version": "0.1.0"
+}

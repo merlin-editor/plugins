@@ -1,0 +1,18 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "UI",
+    "description": "UI density, chrome & font presets",
+    "hue": "purple",
+    "title": "merlin Layouts"
+  },
+  "name": "merlin-layouts",
+  "permissions": {},
+  "published": "2026-11-08T23:21:49Z",
+  "sha256": "b7dfb94729f10e4d915e511dfb080c83cf217e220c4bb6755240aef25d4c5a8c",
+  "size": 1020,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-layouts-v0.1.0/merlin-layouts-0.1.0.merlin",
+  "version": "0.1.0"
+}

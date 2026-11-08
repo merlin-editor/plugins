@@ -1,0 +1,18 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "TH",
+    "description": "Dark and light colour themes",
+    "hue": "purple",
+    "title": "merlin Themes"
+  },
+  "name": "merlin-themes",
+  "permissions": {},
+  "published": "2026-11-08T23:21:52Z",
+  "sha256": "31066aba7c520221f562fa4ddea71de7aa0f95edfbf6e017b5bb9a43e4cc336e",
+  "size": 4551,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-themes-v0.1.0/merlin-themes-0.1.0.merlin",
+  "version": "0.1.0"
+}

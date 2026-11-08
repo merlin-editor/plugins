@@ -1,0 +1,25 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "JS",
+    "description": "JS & TypeScript syntax, tasks & tsserver",
+    "hue": "yellow",
+    "title": "JavaScript"
+  },
+  "name": "javascript",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "typescript-language-server"
+    ],
+    "workspace-read": true
+  },
+  "published": "2026-11-08T23:21:17Z",
+  "sha256": "7c360ec1761e0a8713e076b73a0dc491691454fa1f4dd6d8ab14855d197cd1c2",
+  "size": 594100,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/javascript-v0.1.0/javascript-0.1.0.merlin",
+  "version": "0.1.0"
+}

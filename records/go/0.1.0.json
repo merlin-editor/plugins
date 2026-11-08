@@ -1,0 +1,24 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "GO",
+    "description": "Go syntax & gopls",
+    "hue": "cyan",
+    "title": "Go"
+  },
+  "name": "go",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "gopls"
+    ]
+  },
+  "published": "2026-11-08T23:20:48Z",
+  "sha256": "7aa4458c218c82087724e4be8145e7b29ff9536c8dc9d01777f2588fa86478e2",
+  "size": 577261,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/go-v0.1.0/go-0.1.0.merlin",
+  "version": "0.1.0"
+}

@@ -1,0 +1,414 @@
+{
+  "expires": "2026-12-08T23:24:57Z",
+  "generated": "2026-11-08T23:24:57Z",
+  "plugins": {
+    "catch2": {
+      "badge": "C2",
+      "blocked": null,
+      "description": "Catch2 test discovery & runner for C++",
+      "hue": "green",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/catch2",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Catch2",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "terminal": true
+          },
+          "published": "2026-11-08T23:19:34Z",
+          "sha256": "7f191d7bbaa15ad22a06489b4aaf1e817aa4a5c6c2c5472e3d8891385df81f54",
+          "size": 43107,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/catch2-v0.1.0/catch2-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "cpp": {
+      "badge": "C+",
+      "blocked": null,
+      "description": "C & C++ syntax, outlines & clangd",
+      "hue": "blue",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/cpp",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "C/C++",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "clangd"
+            ]
+          },
+          "published": "2026-11-08T23:19:57Z",
+          "sha256": "8daf71ee09e0210307b0074356635a2abfe7449b9692da49163d5b894dbb0db0",
+          "size": 177006,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/cpp-v0.1.0/cpp-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "dap": {
+      "badge": "DB",
+      "blocked": null,
+      "description": null,
+      "hue": "orange",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/dap",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Debugger",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "debugger": true
+          },
+          "published": "2026-11-08T23:20:18Z",
+          "sha256": "6a74817187a2e6898d0c2147e941627447f0fe8ca55607dc5c7aa5bdefba0064",
+          "size": 81603,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/dap-v0.1.0/dap-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "go": {
+      "badge": "GO",
+      "blocked": null,
+      "description": "Go syntax & gopls",
+      "hue": "cyan",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/go",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Go",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "gopls"
+            ]
+          },
+          "published": "2026-11-08T23:20:48Z",
+          "sha256": "7aa4458c218c82087724e4be8145e7b29ff9536c8dc9d01777f2588fa86478e2",
+          "size": 577261,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/go-v0.1.0/go-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "javascript": {
+      "badge": "JS",
+      "blocked": null,
+      "description": "JS & TypeScript syntax, tasks & tsserver",
+      "hue": "yellow",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/javascript",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "JavaScript",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "typescript-language-server"
+            ],
+            "workspace-read": true
+          },
+          "published": "2026-11-08T23:21:17Z",
+          "sha256": "7c360ec1761e0a8713e076b73a0dc491691454fa1f4dd6d8ab14855d197cd1c2",
+          "size": 594100,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/javascript-v0.1.0/javascript-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "json": {
+      "badge": "{}",
+      "blocked": null,
+      "description": "Syntax highlighting & code folding",
+      "hue": "green",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/json",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "JSON",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true
+          },
+          "published": "2026-11-08T23:21:42Z",
+          "sha256": "df882524de73a739c17ecef5d6ddf320087c15b5ff8b9383d03817fb64c55795",
+          "size": 410209,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/json-v0.1.0/json-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "merlin-icons": {
+      "badge": "IC",
+      "blocked": null,
+      "description": "File and UI icon themes",
+      "hue": "purple",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/merlin-icons",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "merlin Icons",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {},
+          "published": "2026-11-08T23:21:46Z",
+          "sha256": "a89dbbc4d6194943b7a7ca84072e008ef7b2bd31df4b86b26d0322324f6eefa4",
+          "size": 7536,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-icons-v0.1.0/merlin-icons-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "merlin-layouts": {
+      "badge": "UI",
+      "blocked": null,
+      "description": "UI density, chrome & font presets",
+      "hue": "purple",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/merlin-layouts",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "merlin Layouts",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {},
+          "published": "2026-11-08T23:21:49Z",
+          "sha256": "b7dfb94729f10e4d915e511dfb080c83cf217e220c4bb6755240aef25d4c5a8c",
+          "size": 1020,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-layouts-v0.1.0/merlin-layouts-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "merlin-themes": {
+      "badge": "TH",
+      "blocked": null,
+      "description": "Dark and light colour themes",
+      "hue": "purple",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/merlin-themes",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "merlin Themes",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {},
+          "published": "2026-11-08T23:21:52Z",
+          "sha256": "31066aba7c520221f562fa4ddea71de7aa0f95edfbf6e017b5bb9a43e4cc336e",
+          "size": 4551,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-themes-v0.1.0/merlin-themes-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "pdf": {
+      "badge": "PDF",
+      "blocked": null,
+      "description": "Opens PDF files in a tab: pages drawn as you scroll, with text to select, find and copy.",
+      "hue": "red",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/pdf",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "PDF",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {},
+          "published": "2026-11-08T23:23:29Z",
+          "sha256": "9748c07ada6fac629d0f35da0abda3bff431f14c08e1390f271bf308da110782",
+          "size": 1908092,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/pdf-v0.1.0/pdf-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "python": {
+      "badge": "PY",
+      "blocked": null,
+      "description": "Python syntax, pytest & pyright",
+      "hue": "cyan",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/python",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Python",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "pyright-langserver"
+            ]
+          },
+          "published": "2026-11-08T23:23:58Z",
+          "sha256": "bb2efee2f4fafc1385465987356ffdc97aab0d9ce8bc12636365ee3db72902a4",
+          "size": 607026,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/python-v0.1.0/python-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "rust": {
+      "badge": "RS",
+      "blocked": null,
+      "description": "Syntax, tests, Cargo tasks & rust-analyzer",
+      "hue": "orange",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/rust",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Rust",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "rust-analyzer"
+            ],
+            "terminal": true,
+            "workspace-read": true
+          },
+          "published": "2026-11-08T23:24:29Z",
+          "sha256": "80ba16e293738f6c4d7444c2f97e2ca6b126ca028718a99979a4f0e01a112e99",
+          "size": 700806,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/rust-v0.1.0/rust-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
+    "toml": {
+      "badge": "TM",
+      "blocked": null,
+      "description": "Syntax highlighting & code folding",
+      "hue": "cyan",
+      "license": null,
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/toml",
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "TOML",
+      "versions": [
+        {
+          "api": "0.14",
+          "blocked": null,
+          "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+          "depends": [],
+          "permissions": {
+            "editor-read": true
+          },
+          "published": "2026-11-08T23:24:54Z",
+          "sha256": "0cf08c511e08060c0cc0a7f44491c0fb4f2cf1e4d91368d172fa1722c6b3b6ca",
+          "size": 414190,
+          "url": "https://github.com/merlin-editor/plugins/releases/download/toml-v0.1.0/toml-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "serial": 1
+}

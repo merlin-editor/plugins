@@ -1,0 +1,26 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "RS",
+    "description": "Syntax, tests, Cargo tasks & rust-analyzer",
+    "hue": "orange",
+    "title": "Rust"
+  },
+  "name": "rust",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "rust-analyzer"
+    ],
+    "terminal": true,
+    "workspace-read": true
+  },
+  "published": "2026-11-08T23:24:29Z",
+  "sha256": "80ba16e293738f6c4d7444c2f97e2ca6b126ca028718a99979a4f0e01a112e99",
+  "size": 700806,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/rust-v0.1.0/rust-0.1.0.merlin",
+  "version": "0.1.0"
+}

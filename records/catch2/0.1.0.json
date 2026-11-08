@@ -1,0 +1,21 @@
+{
+  "api": "0.14",
+  "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
+  "depends": [],
+  "manifest": {
+    "badge": "C2",
+    "description": "Catch2 test discovery & runner for C++",
+    "hue": "green",
+    "title": "Catch2"
+  },
+  "name": "catch2",
+  "permissions": {
+    "editor-read": true,
+    "terminal": true
+  },
+  "published": "2026-11-08T23:19:34Z",
+  "sha256": "7f191d7bbaa15ad22a06489b4aaf1e817aa4a5c6c2c5472e3d8891385df81f54",
+  "size": 43107,
+  "url": "https://github.com/merlin-editor/plugins/releases/download/catch2-v0.1.0/catch2-0.1.0.merlin",
+  "version": "0.1.0"
+}
