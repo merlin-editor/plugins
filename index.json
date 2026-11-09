@@ -1,6 +1,6 @@
 {
-  "expires": "2026-12-08T23:24:57Z",
-  "generated": "2026-11-08T23:24:57Z",
+  "expires": "2026-12-09T11:38:59Z",
+  "generated": "2026-11-09T11:38:59Z",
   "plugins": {
     "catch2": {
       "badge": "C2",
@@ -410,5 +410,5 @@
     }
   },
   "schema": 1,
-  "serial": 1
+  "serial": 2
 }
