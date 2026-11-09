@@ -19,12 +19,12 @@ jobs:
         run: |
           apt-get update -q
           apt-get install -y -q --no-install-recommends git ca-certificates
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Install the rest
         run: xargs -a build/apt.txt apt-get install -y -q --no-install-recommends
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: /opt/merlin
           key: merlin-${{ hashFiles('build/toolchain.env') }}
