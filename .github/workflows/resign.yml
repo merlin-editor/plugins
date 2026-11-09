@@ -26,8 +26,8 @@ jobs:
         run: |
           apt-get update -q
           apt-get install -y -q --no-install-recommends git ca-certificates python3 minisign gh
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: pages
