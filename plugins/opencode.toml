@@ -1,0 +1,7 @@
+repository = "https://github.com/merlin-editor/merlin"
+path = "plugins/opencode"
+owners = ["marc-cr1810"]
+
+[[versions]]
+version = "0.1.0"
+commit = "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de"

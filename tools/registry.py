@@ -38,7 +38,7 @@ VERSION = re.compile(
     r"(-[0-9A-Za-z]+(\.[0-9A-Za-z]+)*)?(\+[0-9A-Za-z]+(\.[0-9A-Za-z]+)*)?$"
 )
 COMMIT = re.compile(r"^[0-9a-f]{40}$")
-ENTRY_KEYS = {"repository", "path", "owners", "blocked", "versions"}
+ENTRY_KEYS = {"repository", "path", "owners", "blocked", "replaced-by", "replaced-note", "versions"}
 VERSION_KEYS = {"version", "commit", "yanked", "blocked"}
 EXPIRY = timedelta(days=30)
 # The manifest fields Browse shows, copied into each record.
@@ -223,12 +223,34 @@ def build(name, version, out):
         "url": f"https://github.com/{REGISTRY_REPO}/releases/download/{name}-v{version}/{package.name}",
         "sha256": hashlib.sha256(data).hexdigest(),
         "size": len(data),
-        "permissions": manifest.get("permissions", {}),
-        "depends": manifest.get("depends", []),
+        **split_permissions(manifest.get("permissions", {})),
+        **depends_of(manifest.get("depends", {})),
+        "systems": manifest.get("systems", []),
+        "arch": manifest.get("arch", []),
+        "programs": manifest.get("programs", {}),
         "manifest": {k: manifest[k] for k in SHOWN if k in manifest},
     }
     (out / "record.json").write_text(json.dumps(record, indent=2, sort_keys=True) + "\n")
     print(f"{package.name}: {len(data)} bytes, sha256 {record['sha256']}")
+
+
+def split_permissions(permissions):
+    """Plugin API 0.15's permissions go apart from the rest: merlin 0.1
+    refuses keys it doesn't know in `permissions`, and so the whole index."""
+    newer = {"network", "agent"}
+    more = {k: v for k, v in permissions.items() if k in newer}
+    return {
+        "permissions": {k: v for k, v in permissions.items() if k not in newer},
+        "more-permissions": more,
+    }
+
+
+def depends_of(depends):
+    """`[depends]` as a table of requirements (API 0.15), or the list of
+    names before it: the names for merlin 0.1, the requirements for later."""
+    if isinstance(depends, dict):
+        return {"depends": sorted(depends), "requires": depends}
+    return {"depends": list(depends), "requires": {d: "*" for d in depends}}
 
 
 def version_key(version):
@@ -261,7 +283,12 @@ def index(records, old, out):
                     "sha256": record["sha256"],
                     "size": record["size"],
                     "permissions": record["permissions"],
+                    "more-permissions": record.get("more-permissions", {}),
                     "depends": record["depends"],
+                    "requires": record.get("requires", {d: "*" for d in record["depends"]}),
+                    "systems": record.get("systems", []),
+                    "arch": record.get("arch", []),
+                    "programs": record.get("programs", {}),
                     "yanked": v.get("yanked"),
                     "blocked": v.get("blocked"),
                 }
@@ -281,6 +308,8 @@ def index(records, old, out):
             "path": entry.get("path", ""),
             "owners": entry["owners"],
             "blocked": entry.get("blocked"),
+            "replaced-by": entry.get("replaced-by"),
+            "replaced-note": entry.get("replaced-note"),
             "versions": sorted(versions, key=lambda x: version_key(x["version"])),
         }
     doc = {
@@ -318,6 +347,11 @@ def summary(record_path):
         outside.append(f"run `{prog}`{flag}")
     if p.get("debugger"):
         outside.append("start and drive debuggers")
+    more = r.get("more-permissions", {})
+    if more.get("network"):
+        outside.append("connect to " + ", ".join(f"`{h}`" for h in more["network"]))
+    if more.get("agent"):
+        asks.append("add an agent to the chat")
     tier = "outside the sandbox" if outside else ("sandboxed" if asks else "data or nothing asked")
     lines.append(f"Review tier: **{tier}**")
     lines += [f"- {a}" for a in asks] + [f"- ⚠️ {o}" for o in outside] + [""]
