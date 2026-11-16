@@ -1,0 +1,39 @@
+name: Watch the index
+
+# Every day: how long the published index has left. Re-sign runs weekly and
+# keeps it at about 30 days, but GitHub stops a schedule after 60 days with
+# no activity in the repository, and nothing would fail then. So this
+# starts Re-sign itself with three weeks left, and fails, which emails the
+# maintainers, with two weeks left.
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install minisign
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q minisign
+      - name: Check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          left=$(tools/index-left.sh)
+          echo "The index has $left days left."
+          if [ "$left" -lt 21 ]; then
+            echo "Starting Re-sign."
+            gh workflow run resign.yml --repo "$GITHUB_REPOSITORY"
+          fi
+          if [ "$left" -lt 14 ]; then
+            echo "::error::The index expires in $left days: Re-sign isn't keeping it fresh."
+            exit 1
+          fi
