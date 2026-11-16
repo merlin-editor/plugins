@@ -1,0 +1,39 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "C+",
+    "description": "C & C++ syntax, outlines & clangd",
+    "hue": "blue",
+    "title": "C/C++"
+  },
+  "more-permissions": {},
+  "name": "cpp",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "clangd"
+    ]
+  },
+  "programs": {
+    "clangd": {
+      "for": "Completion, errors and go to definition",
+      "install": {
+        "linux": "sudo apt install clangd",
+        "macos": "brew install llvm",
+        "windows": "winget install LLVM.LLVM"
+      },
+      "url": "https://clangd.llvm.org/installation"
+    }
+  },
+  "published": "2026-11-16T06:53:18Z",
+  "requires": {},
+  "sha256": "e2f8d7b663544e11e880afdcda15c53ff28008ad81564ab6010fbbc33f95d350",
+  "size": 179209,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/cpp-v0.2.0/cpp-0.2.0.merlin",
+  "version": "0.2.0"
+}

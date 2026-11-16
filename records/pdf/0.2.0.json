@@ -1,0 +1,23 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "PDF",
+    "description": "Opens PDF files in a tab: pages drawn as you scroll, with text to select, find and copy.",
+    "hue": "red",
+    "title": "PDF"
+  },
+  "more-permissions": {},
+  "name": "pdf",
+  "permissions": {},
+  "programs": {},
+  "published": "2026-11-16T06:56:14Z",
+  "requires": {},
+  "sha256": "2bc01cebcc2449f536e0b119d44394c20b90d7da555763bb84e0b82615aa455d",
+  "size": 1910192,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/pdf-v0.2.0/pdf-0.2.0.merlin",
+  "version": "0.2.0"
+}

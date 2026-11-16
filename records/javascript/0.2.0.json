@@ -1,0 +1,36 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "JS",
+    "description": "JS & TypeScript syntax, tasks & tsserver",
+    "hue": "yellow",
+    "title": "JavaScript"
+  },
+  "more-permissions": {},
+  "name": "javascript",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "typescript-language-server"
+    ],
+    "workspace-read": true
+  },
+  "programs": {
+    "typescript-language-server": {
+      "for": "Completion, errors and go to definition",
+      "install": "npm install -g typescript-language-server typescript",
+      "url": "https://github.com/typescript-language-server/typescript-language-server"
+    }
+  },
+  "published": "2026-11-16T06:54:17Z",
+  "requires": {},
+  "sha256": "82064e5edc19152b38116651cabc92b4173def2be3a0b15d69d3c41f47c4fa45",
+  "size": 596191,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/javascript-v0.2.0/javascript-0.2.0.merlin",
+  "version": "0.2.0"
+}

@@ -1,0 +1,35 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "GO",
+    "description": "Go syntax & gopls",
+    "hue": "cyan",
+    "title": "Go"
+  },
+  "more-permissions": {},
+  "name": "go",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "gopls"
+    ]
+  },
+  "programs": {
+    "gopls": {
+      "for": "Completion, errors and go to definition",
+      "install": "go install golang.org/x/tools/gopls@latest",
+      "url": "https://go.dev/gopls/"
+    }
+  },
+  "published": "2026-11-16T06:53:56Z",
+  "requires": {},
+  "sha256": "51c86f05f6b373964b8c56f996294ea6cf1f24ce46d9fd89925b85861fc596cd",
+  "size": 579177,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/go-v0.2.0/go-0.2.0.merlin",
+  "version": "0.2.0"
+}

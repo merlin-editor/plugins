@@ -1,0 +1,25 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "TM",
+    "description": "Syntax highlighting & code folding",
+    "hue": "cyan",
+    "title": "TOML"
+  },
+  "more-permissions": {},
+  "name": "toml",
+  "permissions": {
+    "editor-read": true
+  },
+  "programs": {},
+  "published": "2026-11-16T06:57:18Z",
+  "requires": {},
+  "sha256": "8db0410875653659be9342ee55721417cbed5ec5aef29a70e3e7145c0bf692df",
+  "size": 415643,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/toml-v0.2.0/toml-0.2.0.merlin",
+  "version": "0.2.0"
+}

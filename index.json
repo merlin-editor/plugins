@@ -1,7 +1,53 @@
 {
-  "expires": "2026-12-09T11:38:59Z",
-  "generated": "2026-11-09T11:38:59Z",
+  "expires": "2026-12-16T06:57:21Z",
+  "generated": "2026-11-16T06:57:21Z",
   "plugins": {
+    "antigravity": {
+      "badge": "AG",
+      "blocked": null,
+      "description": "Google's Antigravity agent in the chat",
+      "hue": "blue",
+      "license": "MIT",
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/antigravity",
+      "replaced-by": null,
+      "replaced-note": null,
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "Antigravity",
+      "versions": [
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {
+            "agent": true
+          },
+          "permissions": {
+            "processes": [
+              "agy"
+            ]
+          },
+          "programs": {
+            "agy": {
+              "for": "Chatting with Antigravity in merlin",
+              "url": "https://antigravity.google/docs/ide/extensions/acp/"
+            }
+          },
+          "published": "2026-11-16T06:52:45Z",
+          "requires": {},
+          "sha256": "82fa23f50ecf0a6d8af2c0f6bec762eaa81367c16d5ed0b949cc4330db8189fd",
+          "size": 133083,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/antigravity-v0.1.0/antigravity-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        }
+      ]
+    },
     "catch2": {
       "badge": "C2",
       "blocked": null,
@@ -12,23 +58,51 @@
         "marc-cr1810"
       ],
       "path": "plugins/catch2",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "Catch2",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "terminal": true
           },
+          "programs": {},
           "published": "2026-11-08T23:19:34Z",
+          "requires": {},
           "sha256": "7f191d7bbaa15ad22a06489b4aaf1e817aa4a5c6c2c5472e3d8891385df81f54",
           "size": 43107,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/catch2-v0.1.0/catch2-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "terminal": true
+          },
+          "programs": {},
+          "published": "2026-11-16T06:53:00Z",
+          "requires": {},
+          "sha256": "99d8817603e3803db7ff240963931a2275901acfba12288bcae3ebd5e47035dc",
+          "size": 45027,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/catch2-v0.2.0/catch2-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -43,14 +117,18 @@
         "marc-cr1810"
       ],
       "path": "plugins/cpp",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "C/C++",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "editor-write": true,
@@ -58,11 +136,48 @@
               "clangd"
             ]
           },
+          "programs": {},
           "published": "2026-11-08T23:19:57Z",
+          "requires": {},
           "sha256": "8daf71ee09e0210307b0074356635a2abfe7449b9692da49163d5b894dbb0db0",
           "size": 177006,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/cpp-v0.1.0/cpp-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "clangd"
+            ]
+          },
+          "programs": {
+            "clangd": {
+              "for": "Completion, errors and go to definition",
+              "install": {
+                "linux": "sudo apt install clangd",
+                "macos": "brew install llvm",
+                "windows": "winget install LLVM.LLVM"
+              },
+              "url": "https://clangd.llvm.org/installation"
+            }
+          },
+          "published": "2026-11-16T06:53:18Z",
+          "requires": {},
+          "sha256": "e2f8d7b663544e11e880afdcda15c53ff28008ad81564ab6010fbbc33f95d350",
+          "size": 179209,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/cpp-v0.2.0/cpp-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -77,22 +192,49 @@
         "marc-cr1810"
       ],
       "path": "plugins/dap",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "Debugger",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "debugger": true
           },
+          "programs": {},
           "published": "2026-11-08T23:20:18Z",
+          "requires": {},
           "sha256": "6a74817187a2e6898d0c2147e941627447f0fe8ca55607dc5c7aa5bdefba0064",
           "size": 81603,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/dap-v0.1.0/dap-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "debugger": true
+          },
+          "programs": {},
+          "published": "2026-11-16T06:53:34Z",
+          "requires": {},
+          "sha256": "eac938f76df13cf267c280ca6c3d00a5daf1c23079ba1e4a2436bee4cfe0f651",
+          "size": 83368,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/dap-v0.2.0/dap-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -107,14 +249,18 @@
         "marc-cr1810"
       ],
       "path": "plugins/go",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "Go",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "editor-write": true,
@@ -122,11 +268,44 @@
               "gopls"
             ]
           },
+          "programs": {},
           "published": "2026-11-08T23:20:48Z",
+          "requires": {},
           "sha256": "7aa4458c218c82087724e4be8145e7b29ff9536c8dc9d01777f2588fa86478e2",
           "size": 577261,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/go-v0.1.0/go-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "gopls"
+            ]
+          },
+          "programs": {
+            "gopls": {
+              "for": "Completion, errors and go to definition",
+              "install": "go install golang.org/x/tools/gopls@latest",
+              "url": "https://go.dev/gopls/"
+            }
+          },
+          "published": "2026-11-16T06:53:56Z",
+          "requires": {},
+          "sha256": "51c86f05f6b373964b8c56f996294ea6cf1f24ce46d9fd89925b85861fc596cd",
+          "size": 579177,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/go-v0.2.0/go-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -141,14 +320,18 @@
         "marc-cr1810"
       ],
       "path": "plugins/javascript",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "JavaScript",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "editor-write": true,
@@ -157,11 +340,45 @@
             ],
             "workspace-read": true
           },
+          "programs": {},
           "published": "2026-11-08T23:21:17Z",
+          "requires": {},
           "sha256": "7c360ec1761e0a8713e076b73a0dc491691454fa1f4dd6d8ab14855d197cd1c2",
           "size": 594100,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/javascript-v0.1.0/javascript-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "typescript-language-server"
+            ],
+            "workspace-read": true
+          },
+          "programs": {
+            "typescript-language-server": {
+              "for": "Completion, errors and go to definition",
+              "install": "npm install -g typescript-language-server typescript",
+              "url": "https://github.com/typescript-language-server/typescript-language-server"
+            }
+          },
+          "published": "2026-11-16T06:54:17Z",
+          "requires": {},
+          "sha256": "82064e5edc19152b38116651cabc92b4173def2be3a0b15d69d3c41f47c4fa45",
+          "size": 596191,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/javascript-v0.2.0/javascript-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -176,22 +393,49 @@
         "marc-cr1810"
       ],
       "path": "plugins/json",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "JSON",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true
           },
+          "programs": {},
           "published": "2026-11-08T23:21:42Z",
+          "requires": {},
           "sha256": "df882524de73a739c17ecef5d6ddf320087c15b5ff8b9383d03817fb64c55795",
           "size": 410209,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/json-v0.1.0/json-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true
+          },
+          "programs": {},
+          "published": "2026-11-16T06:54:36Z",
+          "requires": {},
+          "sha256": "f967e004ee5eb28eefa5b918348632e8d84012f5655288c9ea5b29ebc2957a40",
+          "size": 411722,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/json-v0.2.0/json-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -206,20 +450,45 @@
         "marc-cr1810"
       ],
       "path": "plugins/merlin-icons",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "merlin Icons",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {},
+          "programs": {},
           "published": "2026-11-08T23:21:46Z",
+          "requires": {},
           "sha256": "a89dbbc4d6194943b7a7ca84072e008ef7b2bd31df4b86b26d0322324f6eefa4",
           "size": 7536,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-icons-v0.1.0/merlin-icons-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {},
+          "programs": {},
+          "published": "2026-11-16T06:54:40Z",
+          "requires": {},
+          "sha256": "24d97ba7a9a69676658ffd9eeeb3b1209bffd8f2e6fa254163822f52c66f21c3",
+          "size": 7546,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-icons-v0.2.0/merlin-icons-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -234,20 +503,45 @@
         "marc-cr1810"
       ],
       "path": "plugins/merlin-layouts",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "merlin Layouts",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {},
+          "programs": {},
           "published": "2026-11-08T23:21:49Z",
+          "requires": {},
           "sha256": "b7dfb94729f10e4d915e511dfb080c83cf217e220c4bb6755240aef25d4c5a8c",
           "size": 1020,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-layouts-v0.1.0/merlin-layouts-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {},
+          "programs": {},
+          "published": "2026-11-16T06:54:43Z",
+          "requires": {},
+          "sha256": "50c23b0a7d295aeceffb0499363cf339a8beccf13f429755c4e3d1c7d0ef5fb9",
+          "size": 1022,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-layouts-v0.2.0/merlin-layouts-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -262,19 +556,91 @@
         "marc-cr1810"
       ],
       "path": "plugins/merlin-themes",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "merlin Themes",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {},
+          "programs": {},
           "published": "2026-11-08T23:21:52Z",
+          "requires": {},
           "sha256": "31066aba7c520221f562fa4ddea71de7aa0f95edfbf6e017b5bb9a43e4cc336e",
           "size": 4551,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-themes-v0.1.0/merlin-themes-0.1.0.merlin",
+          "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {},
+          "programs": {},
+          "published": "2026-11-16T06:54:47Z",
+          "requires": {},
+          "sha256": "5591d85aeab3df532f26dc3d85c3690ddbe66fbd5ff3e27b23e95135fa00359c",
+          "size": 4551,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-themes-v0.2.0/merlin-themes-0.2.0.merlin",
+          "version": "0.2.0",
+          "yanked": null
+        }
+      ]
+    },
+    "opencode": {
+      "badge": "OC",
+      "blocked": null,
+      "description": "opencode in the chat",
+      "hue": "grey",
+      "license": "MIT",
+      "owners": [
+        "marc-cr1810"
+      ],
+      "path": "plugins/opencode",
+      "replaced-by": null,
+      "replaced-note": null,
+      "repository": "https://github.com/merlin-editor/merlin",
+      "title": "opencode",
+      "versions": [
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {
+            "agent": true
+          },
+          "permissions": {
+            "processes": [
+              "opencode"
+            ]
+          },
+          "programs": {
+            "opencode": {
+              "for": "Chatting with opencode in merlin",
+              "install": "npm install -g opencode-ai",
+              "url": "https://opencode.ai/docs/"
+            }
+          },
+          "published": "2026-11-16T06:55:03Z",
+          "requires": {},
+          "sha256": "7dda672f4030d5e7cb90367c2b17a26e7e7f1018408f63463f355b0477ae6ac5",
+          "size": 132949,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/opencode-v0.1.0/opencode-0.1.0.merlin",
           "version": "0.1.0",
           "yanked": null
         }
@@ -290,20 +656,45 @@
         "marc-cr1810"
       ],
       "path": "plugins/pdf",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "PDF",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {},
+          "programs": {},
           "published": "2026-11-08T23:23:29Z",
+          "requires": {},
           "sha256": "9748c07ada6fac629d0f35da0abda3bff431f14c08e1390f271bf308da110782",
           "size": 1908092,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/pdf-v0.1.0/pdf-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {},
+          "programs": {},
+          "published": "2026-11-16T06:56:14Z",
+          "requires": {},
+          "sha256": "2bc01cebcc2449f536e0b119d44394c20b90d7da555763bb84e0b82615aa455d",
+          "size": 1910192,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/pdf-v0.2.0/pdf-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -318,14 +709,18 @@
         "marc-cr1810"
       ],
       "path": "plugins/python",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "Python",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "editor-write": true,
@@ -333,11 +728,44 @@
               "pyright-langserver"
             ]
           },
+          "programs": {},
           "published": "2026-11-08T23:23:58Z",
+          "requires": {},
           "sha256": "bb2efee2f4fafc1385465987356ffdc97aab0d9ce8bc12636365ee3db72902a4",
           "size": 607026,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/python-v0.1.0/python-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "pyright-langserver"
+            ]
+          },
+          "programs": {
+            "pyright-langserver": {
+              "for": "Completion, errors and go to definition",
+              "install": "npm install -g pyright",
+              "url": "https://microsoft.github.io/pyright/#/installation"
+            }
+          },
+          "published": "2026-11-16T06:56:36Z",
+          "requires": {},
+          "sha256": "744cb49229669c901f3d92e3e7d18b7f0201ed5c568d2d101b0299d5c62cdad1",
+          "size": 609055,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/python-v0.2.0/python-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -352,14 +780,18 @@
         "marc-cr1810"
       ],
       "path": "plugins/rust",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "Rust",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true,
             "editor-write": true,
@@ -369,11 +801,46 @@
             "terminal": true,
             "workspace-read": true
           },
+          "programs": {},
           "published": "2026-11-08T23:24:29Z",
+          "requires": {},
           "sha256": "80ba16e293738f6c4d7444c2f97e2ca6b126ca028718a99979a4f0e01a112e99",
           "size": 700806,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/rust-v0.1.0/rust-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true,
+            "editor-write": true,
+            "processes": [
+              "rust-analyzer"
+            ],
+            "terminal": true,
+            "workspace-read": true
+          },
+          "programs": {
+            "rust-analyzer": {
+              "for": "Completion, errors and go to definition",
+              "install": "rustup component add rust-analyzer",
+              "url": "https://rust-analyzer.github.io/"
+            }
+          },
+          "published": "2026-11-16T06:56:59Z",
+          "requires": {},
+          "sha256": "79ee081084b12f23203f51f4da704bbbe024f134766890746299c52d419dba0d",
+          "size": 703096,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/rust-v0.2.0/rust-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
@@ -388,27 +855,54 @@
         "marc-cr1810"
       ],
       "path": "plugins/toml",
+      "replaced-by": null,
+      "replaced-note": null,
       "repository": "https://github.com/merlin-editor/merlin",
       "title": "TOML",
       "versions": [
         {
           "api": "0.14",
+          "arch": [],
           "blocked": null,
           "commit": "1c58427d3162e0dfba56dd7330d32021f202c337",
           "depends": [],
+          "more-permissions": {},
           "permissions": {
             "editor-read": true
           },
+          "programs": {},
           "published": "2026-11-08T23:24:54Z",
+          "requires": {},
           "sha256": "0cf08c511e08060c0cc0a7f44491c0fb4f2cf1e4d91368d172fa1722c6b3b6ca",
           "size": 414190,
+          "systems": [],
           "url": "https://github.com/merlin-editor/plugins/releases/download/toml-v0.1.0/toml-0.1.0.merlin",
           "version": "0.1.0",
+          "yanked": null
+        },
+        {
+          "api": "0.15",
+          "arch": [],
+          "blocked": null,
+          "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+          "depends": [],
+          "more-permissions": {},
+          "permissions": {
+            "editor-read": true
+          },
+          "programs": {},
+          "published": "2026-11-16T06:57:18Z",
+          "requires": {},
+          "sha256": "8db0410875653659be9342ee55721417cbed5ec5aef29a70e3e7145c0bf692df",
+          "size": 415643,
+          "systems": [],
+          "url": "https://github.com/merlin-editor/plugins/releases/download/toml-v0.2.0/toml-0.2.0.merlin",
+          "version": "0.2.0",
           "yanked": null
         }
       ]
     }
   },
   "schema": 1,
-  "serial": 2
+  "serial": 3
 }

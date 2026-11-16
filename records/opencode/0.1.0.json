@@ -1,0 +1,36 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "OC",
+    "description": "opencode in the chat",
+    "hue": "grey",
+    "license": "MIT",
+    "title": "opencode"
+  },
+  "more-permissions": {
+    "agent": true
+  },
+  "name": "opencode",
+  "permissions": {
+    "processes": [
+      "opencode"
+    ]
+  },
+  "programs": {
+    "opencode": {
+      "for": "Chatting with opencode in merlin",
+      "install": "npm install -g opencode-ai",
+      "url": "https://opencode.ai/docs/"
+    }
+  },
+  "published": "2026-11-16T06:55:03Z",
+  "requires": {},
+  "sha256": "7dda672f4030d5e7cb90367c2b17a26e7e7f1018408f63463f355b0477ae6ac5",
+  "size": 132949,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/opencode-v0.1.0/opencode-0.1.0.merlin",
+  "version": "0.1.0"
+}

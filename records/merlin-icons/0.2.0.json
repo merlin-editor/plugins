@@ -1,0 +1,23 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "IC",
+    "description": "File and UI icon themes",
+    "hue": "purple",
+    "title": "merlin Icons"
+  },
+  "more-permissions": {},
+  "name": "merlin-icons",
+  "permissions": {},
+  "programs": {},
+  "published": "2026-11-16T06:54:40Z",
+  "requires": {},
+  "sha256": "24d97ba7a9a69676658ffd9eeeb3b1209bffd8f2e6fa254163822f52c66f21c3",
+  "size": 7546,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/merlin-icons-v0.2.0/merlin-icons-0.2.0.merlin",
+  "version": "0.2.0"
+}

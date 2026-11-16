@@ -1,0 +1,35 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "AG",
+    "description": "Google's Antigravity agent in the chat",
+    "hue": "blue",
+    "license": "MIT",
+    "title": "Antigravity"
+  },
+  "more-permissions": {
+    "agent": true
+  },
+  "name": "antigravity",
+  "permissions": {
+    "processes": [
+      "agy"
+    ]
+  },
+  "programs": {
+    "agy": {
+      "for": "Chatting with Antigravity in merlin",
+      "url": "https://antigravity.google/docs/ide/extensions/acp/"
+    }
+  },
+  "published": "2026-11-16T06:52:45Z",
+  "requires": {},
+  "sha256": "82fa23f50ecf0a6d8af2c0f6bec762eaa81367c16d5ed0b949cc4330db8189fd",
+  "size": 133083,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/antigravity-v0.1.0/antigravity-0.1.0.merlin",
+  "version": "0.1.0"
+}

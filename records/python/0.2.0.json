@@ -1,0 +1,35 @@
+{
+  "api": "0.15",
+  "arch": [],
+  "commit": "c87b253dbb06b14fc8aad4a7bcb540fa1459b0de",
+  "depends": [],
+  "manifest": {
+    "badge": "PY",
+    "description": "Python syntax, pytest & pyright",
+    "hue": "cyan",
+    "title": "Python"
+  },
+  "more-permissions": {},
+  "name": "python",
+  "permissions": {
+    "editor-read": true,
+    "editor-write": true,
+    "processes": [
+      "pyright-langserver"
+    ]
+  },
+  "programs": {
+    "pyright-langserver": {
+      "for": "Completion, errors and go to definition",
+      "install": "npm install -g pyright",
+      "url": "https://microsoft.github.io/pyright/#/installation"
+    }
+  },
+  "published": "2026-11-16T06:56:36Z",
+  "requires": {},
+  "sha256": "744cb49229669c901f3d92e3e7d18b7f0201ed5c568d2d101b0299d5c62cdad1",
+  "size": 609055,
+  "systems": [],
+  "url": "https://github.com/merlin-editor/plugins/releases/download/python-v0.2.0/python-0.2.0.merlin",
+  "version": "0.2.0"
+}
